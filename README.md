@@ -35,3 +35,6 @@ $ docker rmi cjenkins
 ## Reference from 
 
 https://github.com/geerlingguy/ansible-role-jenkins/issues/50
+
+## docker hub
+https://hub.docker.com/r/zhijunzhou/jenkins/
