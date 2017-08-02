@@ -4,24 +4,18 @@ If you are ready to use docker official jenkins images, but you can not automati
 
 After run this image, you will get a customized official jenkins application mounted on the docker container. Meanwhile, you will get an initialized administator account(admin/admin), and some preinstall [plugins](./plugins.txt).
 
-## Build docker file
+## Usage
 
 ```shell
-$ docker build -t cjenkins .
+$ docker run -d --name jenkins -p 8080:8080 -p 50000:50000 zhijunzhou/jenkins
 ```
 
-## Run docker container
-
-```shell
-$ docker run -d --name jenkins -p 8080:8080 -p 50000:50000 cjenkins
-```
-
-## Custom Jenkins Administrator Account
+## Default Administrator Account
 
 username: admin
 password: admin
 
-## View jenkisn logs
+## View jenkins logs
 
 ```shell
 $ docker logs jenkins
@@ -32,7 +26,9 @@ $ docker logs jenkins
 ```shell
 $ docker stop jenkins
 $ docker rm jenkins
+// remove unused containers and images
 $ docker system prune
+// remove images
 $ docker rmi cjenkins
 ```
 
