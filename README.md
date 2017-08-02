@@ -1,4 +1,8 @@
-# Custom offical jenkins images
+# Custom docker offical jenkins images
+
+If you are ready to use docker official jenkins images, but you can not automatically create an administrator account, and preinstall some plugins you like. The repo will help you to achieve your goal.
+
+After run this image, you will get a customized official jenkins application mounted on the docker container. Meanwhile, you will get an initialized administator account(admin/admin), and some preinstall [plugins](./plugins.txt).
 
 ## Build docker file
 
